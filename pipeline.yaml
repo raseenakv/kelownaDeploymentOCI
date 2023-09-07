@@ -33,7 +33,7 @@ pipeline {
           OCIDeployment(argumentVal: JsonOutput.toJson(args_map),
           credentialsId: 'OCI-Dev-Ops',
           displayName: "testDeployment${BUILD_NUMBER}",
-          endpoint: 'https://devops.ca-toronto-1.oci.oraclecloud.com',
+          endpoint: 'https://devops.ca-montreal-1.oci.oraclecloud.com',
           pipelineId: 'ocid1.devopsdeploypipeline.oc1.ca-montreal-1.amaaaaaaegcqydqaycixfy4jg6ca6denplfcvjt2zwlpe2slvgannqs3owja',
           pollingConfig: [timeoutSeconds: 600, "pollingIntervalSeconds" : 5], executionMode: 'SYNC'
           )
