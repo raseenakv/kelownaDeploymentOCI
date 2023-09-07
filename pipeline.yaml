@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'tar -czf public.tar.gz ./.sh'
+        sh 'tar -zcvf public.tar.gz public'
       }
     }
     stage("OCI Upload Artifact") {
